@@ -22,15 +22,25 @@ function playRound(playerSelection, computerSelection ) {
     }else {
         return `You win ${playerSelection} beats ${computerSelection}`;
     }
+
     
 }
-const playerSelection = prompt();
-const computerSelection = getComputerChoice();
 
-console.log(playRound(playerSelection, computerSelection));
-console.log(playRound(playerSelection, computerSelection));
-console.log(playRound(playerSelection, computerSelection));
-console.log(playRound(playerSelection, computerSelection));
-console.log(playRound(playerSelection, computerSelection));
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        const playerSelection = button.id;
+        const computerSelection = getComputerChoice();
+        const result = playRound(playerSelection, computerSelection);
+        console.log(result);
+    });
+});
+
+// const playerSelection = prompt();
+// const computerSelection = getComputerChoice();
+
+// console.log(playRound(playerSelection, computerSelection));
+
 
 
