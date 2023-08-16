@@ -27,7 +27,7 @@ function playRound(playerSelection, computerSelection ) {
 }
 
 const buttons = document.querySelectorAll('button');
-const results   = document.querySelector('#results');
+const results   = document.getElementById('results');
 
 buttons.forEach(button => {
     button.addEventListener('click', function() {
