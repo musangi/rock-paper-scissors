@@ -24,8 +24,13 @@ function playRound(playerSelection, computerSelection ) {
     }
     
 }
-const playerSelection = "paper";
+const playerSelection = prompt();
 const computerSelection = getComputerChoice();
 
 console.log(playRound(playerSelection, computerSelection));
+console.log(playRound(playerSelection, computerSelection));
+console.log(playRound(playerSelection, computerSelection));
+console.log(playRound(playerSelection, computerSelection));
+console.log(playRound(playerSelection, computerSelection));
+
 
