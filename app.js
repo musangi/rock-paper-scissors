@@ -27,6 +27,7 @@ function playRound(playerSelection, computerSelection ) {
 }
 
 const buttons = document.querySelectorAll('button');
+const results   = document.querySelector('#results');
 
 buttons.forEach(button => {
     button.addEventListener('click', function() {
@@ -34,6 +35,7 @@ buttons.forEach(button => {
         const computerSelection = getComputerChoice();
         const result = playRound(playerSelection, computerSelection);
         console.log(result);
+        results.textContent = result;
     });
 });
 
